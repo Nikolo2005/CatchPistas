@@ -75,6 +75,7 @@ echo "3. Pista de Padel 3 (AF000950)"
 echo "4. Pista de Padel 4 (AF000960)"
 echo "5. Pista de Padel 5 (AF000970)"
 echo "6. Pista de Padel 6 (AF000980)"
+echo "6. Pista de Tenis 5 (AF000140)"
 echo -e "${YELLOW}Pon un numero del 1 al 6${NC}"
 read -r OPCION
 
@@ -86,6 +87,8 @@ case "$OPCION" in
   4) codRecurso="AF000960";;
   5) codRecurso="AF000970";;
   6) codRecurso="AF000980";;
+  7) codRecurso="AF000140";;
+  
   *) echo -e "${RED}Opción inválida. Por favor, selecciona una opción del 1 al 6.${NC}"
      exit 1;;
 esac
